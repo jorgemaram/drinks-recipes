@@ -61,7 +61,7 @@ const Recipe = ({ recipe }) => {
         <div className='col-md-4 mb-3'>
             <div className='card'>
                 <h2 className='card-header'>{recipe.strDrink}</h2>
-                <img className='card-img-top' src={recipe.strDrinkThumb} alt={`Image of ${recipe.strDrinkThumb}`} />
+                <img className='card-img-top' src={recipe.strDrinkThumb} alt={`Representation of ${recipe.strDrinkThumb}`} />
 
                 <div className='card-body'>
                     <button
@@ -84,7 +84,7 @@ const Recipe = ({ recipe }) => {
                             <h2>{recipeinfo.strDrink}</h2>
                             <h3 className='mt-4'>Instructions</h3>
                             <p>{recipeinfo.strInstructions}</p>
-                            <img className='img-fluid my-4' src={recipeinfo.strDrinkThumb} />
+                            <img className='img-fluid my-4' src={recipeinfo.strDrinkThumb} alt={`Representation of ${recipe.strDrinkThumb}`}/>
                             <h3>Ingredients and measures</h3>
                             <ul>{showIngredients(recipeinfo)}</ul>
                         </div>

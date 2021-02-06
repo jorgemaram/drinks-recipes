@@ -21,7 +21,6 @@ const RecipesProvider = (props) => {
 
                 const result = await axios.get(url)
 
-                //console.log(result.data.drinks)
                 saveRecipes(result.data.drinks)
             }
             getRecipes()
